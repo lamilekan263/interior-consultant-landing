@@ -27,9 +27,35 @@ nav{
     padding:10px;
 }
 .nav-brand p{
-    color:white;
+    font-family: Crimson Pro;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
 }
-
+.interior-details h1{
+    font-family: var(--serif);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 46px;
+}
+.interior-details p{
+    font-family: var(--non-serif);
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    margin:20px 0;
+}
+.interior-details span{
+    font-family: var(--non-serif);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+}
 ul{
     height:100vh;
     display:flex;
@@ -37,7 +63,9 @@ ul{
     justify-content: center;
     align-items: center;
 }
-
+.close{
+    display: none;
+}
 li{
     list-style-type: none;
     color:white;
@@ -61,12 +89,28 @@ li{
 
 #chair{
     width:100%;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 .profile-card{
+    position: absolute;
+    width: 260px;
+    height: 108px;
+    left:50px;
    padding:20px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-top:-50px;
+    background: #181719;
+    z-index: 4;
 }
+.profile-card p{
+    font-family: Lora;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
 
+    color: #FFFFFF;
+}
 .profile-details{
     display:flex;
 }
@@ -75,6 +119,105 @@ li{
 }
 .profile-details img{
     border-radius: 50%;
-    width: 62.2px;
-    height: 52.68px;
+    width: 32.2px;
+    height: 30px;
+}
+
+.profile-person-details h1{
+    font-family: var(--non-serif);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px
+}
+.profile-person-details p{
+    font-family: var(--non-serif);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+    color: #828282;
+}
+.footer{
+    text-align: center;
+    font-family: var(--non-serif);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    position: relative;
+    margin-top:205px;
+    color: #A9A9A9;
+}
+.footer__text{
+    margin:20px 0;
+    
+}
+
+
+@media(min-width:740px){
+    .nav-brand{
+        padding:10px;
+        height:20px;
+    }
+    .hamburger-icon{
+        display:none;
+    }
+    ul{
+        
+        display:flex;
+        flex-direction: row;
+        
+    }
+    li{
+        padding:25px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        color: #FFFFFF;
+    }
+    .first-section{
+        display: flex;
+        margin-top:30px;
+    }
+    .interior-details{
+        width:50%;
+    }
+    .interior-details h1{
+        font-size: 48px;
+        line-height: 61px;
+    }
+    .interior-details span{
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .banner-display{
+        width:60%;
+    }
+    .interior-details p{
+        padding-right:150px;
+        font-weight: 350;
+        font-size: 24px;
+        line-height: 29px;
+        margin:30px 0;
+    }
+    hr{
+        display:none;
+    }
+    .profile-card{
+        position: relative;
+        width:400px;
+    }
+    .container{
+        width:90%;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    .footer{
+        position: relative;
+        margin-top:25px;
+    }
 }
