@@ -56,13 +56,7 @@ nav{
     font-size: 14px;
     line-height: 17px;
 }
-ul{
-    height:100vh;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+
 .close{
     display: none;
 }
@@ -154,7 +148,11 @@ li{
     
 }
 
-
+@media(max-width:750px){
+    ul{
+        display: none;
+    }
+}
 @media(min-width:740px){
     .nav-brand{
         padding:10px;
