@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Lora:wght@400;700&family=Montserrat:wght@300;500;700&display=swap");
+:root {
+    font-size: 10px;
+    --dark: #181719;
+    --grey: #a9a9a9;
+    --serif: "Lora", "Times New Roman", Times, serif;
+    --non-serif: "Montserrat", Arial, sans-serif;
+    --brand: "Crimson Pro", "Times New Roman", Times, serif;
+  }
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background: #181719;
+    color:white;
+}
+
+nav{
+    display:flex;
+    justify-content: space-between;
+    margin-top:40px;
+}
+.nav-brand{
+    border: 1px solid white;
+    text-align: center;
+    padding:10px;
+}
+.nav-brand p{
+    color:white;
+}
+
+ul{
+    height:100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+li{
+    list-style-type: none;
+    color:white;
+    padding:20px 0;
+}
+.hamburger-icon{
+    color: #F2F2F2;
+}
+
+.container{
+    width:90%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.interior-details{
+    margin:25px 0;
+}
+.banner-display{
+    width:100%;
+}
+
+#chair{
+    width:100%;
+}
+.profile-card{
+   padding:20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.profile-details{
+    display:flex;
+}
+.image-box{
+    padding:0 10px;
+}
+.profile-details img{
+    border-radius: 50%;
+    width: 62.2px;
+    height: 52.68px;
+}
